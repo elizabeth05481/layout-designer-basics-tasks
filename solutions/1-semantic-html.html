@@ -1,3 +1,30 @@
 <!-- BEGIN (write your solution here)-->
-
+            System.out.println(item);
+        }
+        // Ввод пользователя
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Выберите пункт меню (введите номер): ");
+        int choice = scanner.nextInt();
+        // Обработка выбора
+        switch (choice) {
+            case 1:
+                System.out.println("Вы выбрали: Главная");
+                break;
+            case 2:
+                System.out.println("Вы выбрали: Каталог ресурсов");
+                break;
+            case 3:
+                System.out.println("Вы выбрали: О проекте");
+                break;
+            case 4:
+                System.out.println("Вы выбрали: Контакты");
+                break;
+            default:
+                System.out.println("Неверный выбор. Пожалуйста, попробуйте снова.");
+                break;
+        }
+        // Закрытие сканера
+        scanner.close();
+    }
+}
 <!-- END -->
