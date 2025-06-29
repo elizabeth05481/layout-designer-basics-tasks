@@ -1,20 +1,33 @@
-.quote {
-    display: inline-block;
-    padding: 20px 30px;
-  
-    /* BEGIN (write your solution here) */
 
-    /* END */
-  
-    border: 1px solid #bbb;
-    border-radius: 50px 0;
-  }
-  
-  .quote-author {
-    display: block;
-  
-    /* BEGIN (write your solution here) */
-
-    /* END */
-  }
-  
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+public class QuoteStyler {
+    public static void main(String[] args) {
+        // HTML-код с оформлением цитаты
+        String htmlContent = """
+                <!DOCTYPE html>
+                <html lang="ru">
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Цитата</title>
+                    <style>
+                        .quote {
+                            color: #404040;
+                            font-weight: bold;
+                            font-size: 20px;
+                            text-align: center;
+                        }
+                        .quote-author {
+                            font-weight: normal;
+                            font-size: 16px;
+                            text-align: right;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <blockquote class="quote">
+                        "-Достоевский умер,-сказала гражданка, но как-то не очень уверено.<br>
+                        -Протестую!-горячо воскликнул Бегемот.-Достоевский бесмертен!"
+                    </blockquote>
+                    <p class="quote-author">— Михаил Булгаков, "Мастер и Маргарита"</p>
